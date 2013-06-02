@@ -1,0 +1,58 @@
+.l-content {
+	$padding = 15px;
+
+	background-color: $colorMiddleGreen;
+	padding: $padding $padding $padding $padding+$widthSidebar;
+}
+
+.l-topic {
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	padding-top: 20px;
+	margin-top: 20px;
+
+	&:first-child {
+		border-top: 0;
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	&_header {
+		font-size: 30px;
+		margin-bottom: 10px;
+		font-family: 'Open Sans Light';
+	}
+
+	&_paragraph {
+		font-size: 15px;
+		line-height: 22px;
+		padding: 3px 0;
+	}
+}
+
+.l-features {
+	&_block {
+		margin-top: 15px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&_subheader {
+		font-size: 22px;
+		font-family: 'Open Sans Light';
+		margin-bottom: 5px;
+	}
+
+	&_list {
+		list-style-type: square;
+		list-style-position: inside;
+		line-height: 22px;
+		font-size: 15px;
+
+		&__sublist {
+			padding-left: 15px;
+			list-style-type: disc;
+		}
+	}
+}

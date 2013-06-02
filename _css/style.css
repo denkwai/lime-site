@@ -1,0 +1,387 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a img {
+  border: 0;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+hr {
+  border: 0px none;
+  background: none;
+  outline: none;
+  height: 0;
+  margin: 0;
+}
+[hidden] {
+  display: none;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="image"],
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 0;
+  *margin-top: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0 9;
+}
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  width: auto;
+  height: auto;
+}
+input[type=checkbox],
+input[type=radio] {
+  cursor: pointer;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  height: auto;
+}
+select[multiple] {
+  height: inherit;
+  background-color: #fff;
+}
+input[type="file"] {
+  width: auto;
+  padding: initial;
+  line-height: initial;
+  border: initial;
+  background-color: #fff;
+  background-color: initial;
+  line-height: 18px;
+}
+textarea {
+  height: auto;
+}
+input[type="hidden"] {
+  display: none;
+}
+input[type=file]:focus,
+input[type=checkbox]:focus,
+select:focus {
+  outline: 1px dotted #666;
+}
+input[type="image"] {
+  border: 0;
+}
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  cursor: not-allowed;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid,
+select:focus:required:invalid {
+  color: #b94a48;
+}
+body {
+  background-color: #efefad;
+}
+a:link {
+  color: #fff;
+}
+a:visited {
+  color: #eee;
+}
+a:hover {
+  color: #eee;
+}
+a:active {
+  color: #aaa;
+}
+.l-wrapper {
+  width: 960px;
+  -webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  font-family: 'Open Sans', Verdana, sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+.l-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  -webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  background-color: #3c631b;
+}
+.l-headlink {
+  text-align: center;
+  padding: 10px;
+}
+.l-logo {
+  width: 100px;
+  border: 3px solid #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.l-navigation_link {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 3px 10px;
+}
+.l-navigation_link:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+.l-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+  vertical-align: top;
+  padding: 5px 10px;
+  line-height: 18px;
+  background-color: rgba(0,0,0,0);
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.25));
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.25));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25)));
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.25));
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.25));
+  background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.25));
+  background-repeat: repeat-x;
+  filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(0,0,0,0), endColorstr=rgba(0,0,0,0.25), GradientType=0)';
+}
+.l-people {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.l-content {
+  background-color: #76974a;
+  padding: 15px 15px 15px 265px;
+}
+.l-topic {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.l-topic:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.l-topic_header {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans Light';
+}
+.l-topic_paragraph {
+  font-size: 15px;
+  line-height: 22px;
+  padding: 3px 0;
+}
+.l-features_block {
+  margin-top: 15px;
+}
+.l-features_block:first-child {
+  margin-top: 0;
+}
+.l-features_subheader {
+  font-size: 22px;
+  font-family: 'Open Sans Light';
+  margin-bottom: 5px;
+}
+.l-features_list {
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 22px;
+  font-size: 15px;
+}
+.l-features_list__sublist {
+  padding-left: 15px;
+  list-style-type: disc;
+}

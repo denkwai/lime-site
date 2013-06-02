@@ -1,0 +1,129 @@
+/* Redefined display to include inline-block mixin
+ * if we write 'display: inline-block'
+ */
+inline-block() {
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+display() {
+	inline-block() if inline-block in arguments
+	display arguments unless inline-block in arguments
+}
+
+/* Box-sizing
+ * Firefox 4+
+ * iOS 3.2+
+ * Android 2.1+
+ * and normal browsers
+ */
+box-sizing() {
+	-webkit-box-sizing: arguments;
+	-moz-box-sizing: arguments;
+	box-sizing: arguments;
+}
+
+/* Box-shadow
+ * IE9+
+ * Firefox 3.6+
+ * iOS 4+
+ * Android 2.1+
+ * and normal browsers
+ */
+box-shadow() {
+	-webkit-box-shadow: arguments;
+	-moz-box-shadow: arguments;
+	box-shadow: arguments;
+}
+
+/* Border-radius
+ * Firefox 2+
+ * iOS 3.2+
+ * Android 2.1+
+ * and normal browsers
+ */
+border-radius() {
+	-webkit-border-radius: arguments;
+	-moz-border-radius: arguments;
+	border-radius: arguments;
+}
+
+/* Vertical and horizontal gradients
+ * Firefox 3.6+
+ * Safari 4+
+ * IE with filter support
+ * and normal browsers
+ */
+vertical-gradient($topColor, $bottomColor, $fallbackColor = mix($topColor, $bottomColor, 60%)) {
+	background-color: $fallbackColor;
+	background-image: -moz-linear-gradient(top, $topColor, $bottomColor); // FF 3.6+
+	background-image: -ms-linear-gradient(top, $topColor, $bottomColor); // IE10
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($topColor), to($bottomColor)); // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(top, $topColor, $bottomColor); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(top, $topColor, $bottomColor); // Opera 11.10
+	background-image: linear-gradient(top, $topColor, $bottomColor); // native
+	background-repeat: repeat-x;
+	filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=' + $topColor + ', endColorstr=' + $bottomColor + ', GradientType=0)'; // IE9 and down
+}
+
+horizontal-gradient($leftColor, $rightColor, $fallbackColor = mix($leftColor, $rightColor, 60%)) {
+	background-color: $fallbackColor;
+	background-image: -moz-linear-gradient(left, $leftColor, $rightColor); // FF 3.6+
+	background-image: -ms-linear-gradient(left, $leftColor, $rightColor); // IE10
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from($leftColor), to($rightColor)); // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(left, $leftColor, $rightColor); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(left, $leftColor, $rightColor); // Opera 11.10
+	background-image: linear-gradient(left, $leftColor, $rightColor); // native
+	background-repeat: repeat-x;
+	filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=' + $leftColor + ', endColorstr=' + $rightColor + ', GradientType=1)'; // IE9 and down
+}
+
+/* Link color mixin
+ */
+link-color($color, $colorHover = $color, $colorActive = $color, $colorVisited = $color){
+	&:link{
+		color: $color;
+	}
+	&:visited{
+		color: $colorVisited;
+	}
+	&:hover{
+		color: $colorHover;
+	}
+	&:active{
+		color: $colorActive;
+	}
+}
+
+/* Pseudolink constructor
+ */
+pseudolink($color, $colorHover = $color, $colorActive = $color) {
+	color: $color;
+	border-bottom: 1px dashed $color;
+
+	&:hover{
+		color: $colorHover;
+		border-bottom: 1px dashed $colorHover;
+	}
+
+	&:active{
+		color: $colorActive;
+		border-bottom: 1px dashed $colorActive;
+	}
+}
+
+// очистка потока
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+	}
+	&:after {
+		clear: both;
+	}
+}
+

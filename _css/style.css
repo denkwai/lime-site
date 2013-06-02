@@ -277,9 +277,9 @@ a:active {
 }
 .l-wrapper {
   width: 960px;
-  -webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
-  -moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
-  box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.7);
+  -moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.7);
+  box-shadow: 5px 0 10px -5px rgba(0,0,0,0.7);
   font-family: 'Open Sans', Verdana, sans-serif;
   color: #fff;
   font-size: 14px;
@@ -290,9 +290,9 @@ a:active {
   left: 0;
   bottom: 0;
   width: 250px;
-  -webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
-  -moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
-  box-shadow: 5px 0 10px -5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.7);
+  -moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,0.7);
+  box-shadow: 5px 0 10px -5px rgba(0,0,0,0.7);
   background-color: #3c631b;
 }
 .l-headlink {
@@ -341,7 +341,7 @@ a:active {
   zoom: 1;
 }
 .l-content {
-  background-color: #76974a;
+  background-color: #6a8843;
   padding: 15px 15px 15px 265px;
 }
 .l-topic {

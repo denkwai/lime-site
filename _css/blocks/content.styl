@@ -1,8 +1,7 @@
 .l-content {
 	$padding = 15px;
 
-	background-color: $colorMiddleGreen;
-	padding: $padding $padding $padding $padding+$widthSidebar;
+	padding: $padding;
 }
 
 .l-topic {
@@ -19,7 +18,9 @@
 	&_header {
 		font-size: 30px;
 		margin-bottom: 10px;
-		font-family: 'Open Sans Light';
+		font-family: 'Roboto Slab';
+		font-weight: 700;
+		text-shadow: 0 1px 1px rgba(0,0,0,.6);
 	}
 
 	&_paragraph {
@@ -31,16 +32,20 @@
 
 .l-features {
 	&_block {
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
 		margin-top: 15px;
 
-		&:first-child {
-			margin-top: 0;
+		&:last-child {
+			width: 100%;
 		}
 	}
 
 	&_subheader {
 		font-size: 22px;
-		font-family: 'Open Sans Light';
+		font-family: 'Roboto Slab';
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
 		margin-bottom: 5px;
 	}
 
